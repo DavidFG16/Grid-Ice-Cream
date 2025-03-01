@@ -65,7 +65,7 @@ header .option{
     justify-content: flex-end;
     align-items: center;
     gap:11%;
-    padding-right: 17%;
+    padding-right: 25%;
 }
 
 header .option img{
@@ -75,7 +75,7 @@ header .option img{
 main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 600% 1fr;
+    grid-template-rows: 165% 1fr;
     column-gap: 2%;
     grid-template-areas:"product content";
     padding-top: 4%; 
@@ -84,6 +84,7 @@ main{
 main .section_product{
     grid-area: product;
     position: relative;
+    overflow: hidden;
 }
 
 main .section_product article{
@@ -117,7 +118,7 @@ main .section_product article p:nth-child(3){
 
 main .section_product img{
     position: absolute;
-    position: fixed;
+    /* position: fixed; */
 }
 
 main .section_product > img:nth-child(2){    
@@ -142,22 +143,23 @@ main .section_product > img:nth-child(4){
 
 main .section_main_content{
     grid-area: content;
+    display: flex;
     position: relative;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
-main .section_main_content article{
-    position: absolute;
+ main .section_main_content article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 126px;
+    justify-content: center;
+    padding-top: 123px;
     color: var(--color-1);
-}
+} 
 
-main .section_main_content article h1{
+ main .section_main_content article h1{
     font-family: "Inter_28pt-SemiBold";
     font-size: 69.56px;
 }
@@ -172,15 +174,15 @@ main .section_main_content article p:nth-child(2){
 main .section_main_content p:nth-child(3){
     font-family: "Inder-Regular";
     font-size: 24px;
-    width: 600px; 
-    height: 170px;
+    width: 610px; 
+    padding-left: 10px;
 }
 
 main .section_main_content a{
     grid-area: content;
     position: absolute;
     top: 486px;
-    right: 87px;
+    right: 100px;
     background-color: var(--color-3);
     color: var(--color-1);
     font-family: "Inder-Regular";
@@ -188,4 +190,4 @@ main .section_main_content a{
     padding: 19px 34px;
     border-radius: 10px;
     text-decoration: none;
-}
+} 

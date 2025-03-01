@@ -117,6 +117,7 @@ main .section_product article p:nth-child(3){
 
 main .section_product img{
     position: absolute;
+    position: fixed;
 }
 
 main .section_product > img:nth-child(2){    
@@ -137,4 +138,54 @@ main .section_product > img:nth-child(4){
     left: 10px;
     transform: rotate(85.74deg);
     z-index: -1;
+}
+
+main .section_main_content{
+    grid-area: content;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main .section_main_content article{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 126px;
+    color: var(--color-1);
+}
+
+main .section_main_content article h1{
+    font-family: "Inter_28pt-SemiBold";
+    font-size: 69.56px;
+}
+
+
+main .section_main_content article p:nth-child(2){
+    font-family: "Lalezar-Regular";
+    font-size: 32px;
+}
+
+
+main .section_main_content p:nth-child(3){
+    font-family: "Inder-Regular";
+    font-size: 24px;
+    width: 600px; 
+    height: 170px;
+}
+
+main .section_main_content a{
+    grid-area: content;
+    position: absolute;
+    top: 486px;
+    right: 87px;
+    background-color: var(--color-3);
+    color: var(--color-1);
+    font-family: "Inder-Regular";
+    font-size: 24px;
+    padding: 19px 34px;
+    border-radius: 10px;
+    text-decoration: none;
 }

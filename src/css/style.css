@@ -17,10 +17,10 @@ body{
                         "pre pre pre pre pre info info info info info "
 }
 
+
 header{
     display: contents;
 }
-
 header .img{
     /* background-color: orange; */
     grid-area: logo;
@@ -150,7 +150,6 @@ main .section_main_content{
     position: relative;
     padding-right: 67px;
     justify-content: center;
-
 }
 
  main .section_main_content article{

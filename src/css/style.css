@@ -191,3 +191,47 @@ main .section_main_content a{
     border-radius: 10px;
     text-decoration: none;
 } 
+
+@media (max-width: 440px){
+
+    body{
+        display: grid;
+        padding: 0 ;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 95px) 58px 1fr 294px;
+        grid-template-areas: "logo logo logo" 
+                            "menu menu menu" 
+                            "option option option" 
+                            "pre pre pre"
+                            "info info info"
+ 
+    }
+
+    header{display:inline;
+    }
+
+    header .img{
+        grid-area: logo;
+    }
+
+    
+    nav{
+        grid-area: menu;
+        padding: 0 1%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        gap: 10px;
+    }
+
+
+
+main{
+    display: none;
+}
+}

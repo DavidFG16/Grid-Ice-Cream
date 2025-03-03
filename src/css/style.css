@@ -293,5 +293,42 @@ main .section_main_content a{
         z-index: 1;
     }
 
+    main .section_main_content{
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0;;
+
+    }
+
+    main .section_main_content article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-1);
+        padding-bottom: 72px;
+        width: 100%;
+        padding-bottom: 30px;
+    } 
+
+     main .section_main_content article h1{
+        text-align: center;
+    }
+
+
+    main .section_main_content p:nth-child(3){
+        font-family: "Inder-Regular";
+        font-size: 21px;
+        width: 100%; 
+        padding-left: 0;
+        text-align: justify;
+    }
+    
+    main .section_main_content a{
+        align-self: center;
+        margin-bottom: 40px;
+    }
+
     
 }
